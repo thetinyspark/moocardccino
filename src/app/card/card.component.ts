@@ -11,11 +11,21 @@ export class CardComponent implements OnInit {
   @Input()
   public data:Card|null = null; 
 
+  @Input()
+  public flipped:boolean = false;
+
+  public imgStyle:any = {};
+
   constructor() { }
 
-  
+  toggleFlip(){
+    this.flipped = !this.flipped;
+  }
 
   ngOnInit(): void {
+    this.imgStyle = {
+      'background-image': 'url('+this.data?.img+')'
+    };
   }
 
 }

@@ -1,0 +1,133 @@
+.flipped {
+    transform: rotateY(180deg);
+    /*180+180 = 360, donc un tour complet*/
+}
+
+.card {
+    width: 400px;
+    height: 573px;
+    transform-style: preserve-3d;
+    position: relative;
+    transition: transform 1s;
+}
+
+.face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    padding: 3%;
+    box-sizing: border-box;
+}
+
+.front {
+    z-index: 0;
+    background-image: url("../../assets/ui/card_face.png");
+    background-size: cover;
+}
+
+.back {
+    z-index: 10;
+    background-image: url("../../assets/ui/card_back.png");
+    background-size: cover;
+    transform: rotateY(180deg);
+}
+
+.row {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cost {
+    font-size: 2.35rem;
+    color: white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    width: 10%;
+    margin: 0;
+}
+
+.title {
+    margin-top: 2%;
+    align-self: flex-start;
+    margin-left: 6%;
+    width: 75%;
+    text-align: center;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.img_container {
+    height: 45.7%;
+    position: relative;
+}
+
+.img {
+    margin: 0;
+    width: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+}
+
+.borders {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("../../assets/ui/borders.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    z-index: 20;
+}
+
+.desc_container {
+    height: 35%;
+    width: 80%;
+    margin-top: 5%;
+    margin-left: 10%;
+    overflow: hidden;
+}
+
+.desc {
+    width: 100%;
+    text-align: left;
+    font-weight: bold;
+    font-size: 1rem;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.atk_def_container {
+    height: 11%;
+    justify-content: flex-start;
+}
+
+    .atk{
+        font-size: 2.35rem;
+        color: white;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        width: 10%;
+        margin: 0;
+    }
+
+    .def{
+        font-size: 2.35rem;
+        color: white;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        width: 10%;
+        margin: 0;
+        margin-left: 80%;
+    }

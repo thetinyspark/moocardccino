@@ -21,6 +21,16 @@ export class AppComponent {
         def: 9, 
         price: 1600, 
         img: "/assets/dragon.jpg"
+      } , 
+      {
+        id: 2,
+        name:"Genie de la lampe", 
+        desc: "Je suis, ton meillleuuuurrrrrr amiiiiii.", 
+        cost: 8, 
+        atk: 8, 
+        def: 8, 
+        price: 1600, 
+        img: "/assets/genie.png"
       } 
     );
   }

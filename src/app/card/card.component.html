@@ -1,8 +1,29 @@
-<div *ngIf="data !== null">
-    <p>{{data.cost}}</p>
-    <img src={{data.img}} alt={{data.name}}>
-    <p>{{data.name}}</p>
-    <p>{{data.desc}}</p>
-    <p>{{data.atk}}</p>
-    <p>{{data.def}}</p>
+<div *ngIf="data !== null" class="card" [ngClass]="{'flipped': flipped}" (click)="toggleFlip()">
+
+    <div class="face front">
+
+        <div class="row">
+            <p class="cost">{{data.cost}}</p>
+            <p class="title">{{data.name}}</p>
+        </div>
+        <div class="row img_container">
+            <div [ngStyle]="imgStyle" class="img"></div>
+            <div class="borders"></div>
+        </div>
+
+        <div class="row desc_container">
+            <p class="desc">{{data.desc}}</p>
+        </div>
+        
+        <div class="row atk_def_container">
+            <p class="atk">{{data.atk}}</p>
+            <p class="def">{{data.def}}</p>
+        </div>
+
+    </div>
+
+    <div class="face back">
+
+    </div>
+
 </div>
