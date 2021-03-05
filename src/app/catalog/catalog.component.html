@@ -1,0 +1,9 @@
+<!-- Ici on va poser le filtre en fonction des types -->
+<select [(ngModel)]="currentType">
+    <option *ngFor="let cur of types" value={{cur.type}}>{{cur.name}}</option>
+</select>
+<div class="board">
+    <app-card *ngFor="let currentCard of list|cardType:currentType" 
+                [data]="currentCard" [zoom]="0.5"></app-card>
+</div>
+
