@@ -10,6 +10,10 @@ export class Card {
     public type:string = "";
 }
 
+// notre classe Card possède la même forme que les données contenues dans 
+// le fichier .json, on peut donc tricher un peu et utiliser (encore) un 
+// raccourci de typescript.
+
 export const DEFAULT_TYPE:string = "";
 
 export const CARD_TYPES:any[] = [

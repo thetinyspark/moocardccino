@@ -1,0 +1,27 @@
+[
+    {
+        "type": "",
+        "name": "Tous", 
+        "default": false
+    },
+    {
+        "type": "dragon",
+        "name": "Dragon", 
+        "default": true
+    },
+    {
+        "type": "djin",
+        "name": "Djin", 
+        "default": false
+    },
+    {
+        "type": "human",
+        "name": "Humain", 
+        "default": false
+    },
+    {
+        "type": "Youtuber",
+        "name": "Youtuber", 
+        "default": false
+    }
+]
